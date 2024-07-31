@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kroryi.board.controller.InsertController">
+   <children>
+      <Label layoutX="339.0" layoutY="24.0" text="Board Write">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="115.0" text="Title :">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="136.0" layoutY="179.0" text="Writer :">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="126.0" layoutY="244.0" text="Content :">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfTitle" layoutX="228.0" layoutY="106.0" prefHeight="29.0" prefWidth="355.0" promptText="제목을 입력하세요.">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tfWriter" layoutX="228.0" layoutY="169.0" prefHeight="49.0" prefWidth="155.0" promptText="작성자">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="taContent" layoutX="228.0" layoutY="243.0" prefHeight="220.0" prefWidth="536.0" promptText="내용을 입력하세요.">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextArea>
+       <Button layoutX="251.0" layoutY="526.0" mnemonicParsing="false" onAction="#moveToList" style="-fx-background-color: grey;" text="List to" textFill="WHITE">
+           <font>
+               <Font size="22.0" />
+           </font></Button>
+      <Button layoutX="496.0" layoutY="526.0" mnemonicParsing="false" onAction="#insert" style="-fx-background-color: grey;" text="Insert" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

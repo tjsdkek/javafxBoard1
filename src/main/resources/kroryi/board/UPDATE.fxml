@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kroryi.board.controller.UpdateController">
+    <children>
+        <Label layoutX="358.0" layoutY="28.0" text="게시판 수정">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="226.0" layoutY="88.0" prefHeight="33.0" prefWidth="68.0" text="제목 :">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="199.0" layoutY="147.0" prefHeight="33.0" prefWidth="88.0" text="작성자  :">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="184.0" layoutY="213.0" prefHeight="33.0" prefWidth="103.0" text="작성일자 :">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="219.0" layoutY="274.0" prefHeight="33.0" prefWidth="68.0" text="내  용 :">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <TextField fx:id="tfTitle" layoutX="321.0" layoutY="86.0" prefHeight="33.0" prefWidth="239.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="tfWriter" layoutX="322.0" layoutY="145.0" prefHeight="21.0" prefWidth="173.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="tfRegDate" editable="false" layoutX="321.0" layoutY="211.0" prefHeight="15.0" prefWidth="223.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <TextArea fx:id="taContent" layoutX="319.0" layoutY="274.0" prefHeight="209.0" prefWidth="451.0" style="-: orange;" />
+        <Button layoutX="303.0" layoutY="532.0" mnemonicParsing="false" onAction="#moveToList" style="-fx-background-color: grey;" text="List to" textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="409.0" layoutY="532.0" mnemonicParsing="false" onAction="#moveToUpdate" style="-fx-background-color: grey;" text="Update" textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="96.0" layoutY="532.0" mnemonicParsing="false" onAction="#moveToPrev" style="-fx-background-color: grey;" text="&lt;-Prev" textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="701.0" layoutY="532.0" mnemonicParsing="false" onAction="#moveToNext" style="-fx-background-color: grey;" text="Next-&gt;" textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="527.0" layoutY="532.0" mnemonicParsing="false" onAction="#moveToDelete" style="-fx-background-color: grey;" text="Delete" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
